@@ -3,50 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 8 - HTML</title>
+    <title>Exercício 8</title>
 </head>
 <body>
-    <h1>Exemplo 8 - Uso das tags de imagem &lt;img&gt;, video e iframe</h1>
-    <p>Este exemplo mostra diferentes formas de usar as tags img, video e iframe, incluindo o uso od figure e figcaption para agrupar mídias.</p>
-    <h2>as tags abordadas são:</h2>
+    <h1>Exemplo 8 - Uso das Tags de Imagem e Vídeo</h1>
+    <p>
+        Este exemplo mostra diferentes formas de usar as tags img e video, incluindo o uso de figure e figcaption para agrupar mídias com legendas.
+    </p>
+
+    <h2>Descricao</h2>
+    <p>
+        As tags abordadas são:
+    </p>
     <ul>
-        <li><strong>&lt;img&gt;</strong>: Tag usada para inserir imagens na página. Essa tag é utilizada em conjunto com os atributos src, alt e width e height.</li>
-        <li><strong>&lt;video&gt;</strong>:usada para inserir videos na página</li>
-        <li><strong>&lt;iframe&gt;</strong>:Tag usada para incorporar conteúdo externo como por exemplos vídeos do Youtube
+        <li><strong>img</strong>: Usada para inserir imagens na página.</li>
+        <li><strong>video</strong>: Usada para inserir vídeos na página.</li>
+        <li><strong>figure</strong>: Usada para agrupar mídias (imagens, vídeos, gráficos) com uma legenda.</li>
+        <li><strong>figcaption</strong>: Usada para adicionar uma legenda ao conteúdo dentro de figure.</li>
     </ul>
     <h2>Exemplos Práticos</h2>
+    <h3>Imagem com Legenda usando as tags img, figure e figcaption</h3>
     <figure>
-        <figcaption>Alem do rio azul</figcaption>
-        <img src="c:\Users\pedro.vascon\DDI\Imagem 1.jpeg" alt="Imagem da musica alem do rio azul">
+        <img src="data:image/jpeg;base64,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" alt="LOBO BRANCO" width = "600">
+        <figcaption>Imagem de um Lobo Branco</figcaption>
     </figure>
-    <h2>Imagem 2 - Exemplo do uso do width e heigth</h2>
-    <img src="c:\Users\pedro.vascon\DDI\Imagem 2.jpeg" alt="Foguete fofo...." width="400px" heigth="400px">
-    <h3>2. Vídeo com Legenda usando figure e figcaption</h3>
-    <p>
-        Um vídeo agrupado com uma legenda descritiva.
-    </p>
+    <h3>Vídeo com legenda usando as tags video, figure e figcaption</h3>
     <figure>
-        <video controls width="400">
+        <figcaption>Vídeo de exemplo</figcaption>
+        <video controls width="500">
             <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
             <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
             Seu navegador não suporta o elemento de vídeo.
-        </video>
-        <figcaption>Vídeo 1: Um vídeo de exemplo (Big Buck Bunny).</figcaption>
+        "></video>
     </figure>
-
-    <h3>3. Incorporação de Vídeos do YouTube usando iframe</h3>
-    <p>
-        Dois vídeos do YouTube incorporados lado a lado usando a tag iframe.
-    </p>
-    <div class="iframe-container">
-        <figure>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LRfk6DEfydw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <figcaption>Vídeo 2: Um tutorial rápido sobre HTML.</figcaption>
-        </figure>
-        <figure>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/daKU7soXDAU" title="MATHEUS RIZZO E CURITIBA CORAL - ALÉM DO RIO AZUL (live cover)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <figcaption>Vídeo 3: Além do Rio Azul - Matheus Rizzo e Curitiba Coral.</figcaption>
-        </figure>
-    </div>
+    <h3>Incorporação de vídeos do Youtube usando a tag iframe.</h3>
+    <figure>
+        <figcaption>Vídeo do Youtube- Eu Navegarei</figcaption>
+        <iframe width="1200" height="613" src="https://www.youtube.com/embed/LcYEtuTZGYk?list=RDLcYEtuTZGYk" title="Eu Navegarei | Cover" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </figure>
+    <figure>
+        <figcaption>Além do Rio Azul</figcaption>
+        <iframe width="1200" height="613" src="https://www.youtube.com/embed/daKU7soXDAU?list=RDdaKU7soXDAU" title="MATHEUS RIZZO E CURITIBA CORAL - ALÉM DO RIO AZUL (live cover)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </figure>
 </body>
 </html>
