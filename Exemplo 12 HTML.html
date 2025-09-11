@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 12 HTML</title>
+</head>
+
+<body>
+    <h1>Exemplo 12 HTML - Formulários</h1>
+    <form action="PáginaDestino.asmx" method="get">
+        <fieldset>
+            <legend>Dados Cadastrais</legend>
+            <div>
+                <label for="">CPF</label>
+                <input type="text" name="txtCPF" id="txtCPF">
+            </div>
+            <br>
+            <div>
+                <label for="">Nome</label>
+                <input type="text" name="txtNome" id="txtNome" required autofocus>
+            </div>
+            <br>
+            <div>
+                <label for="">Data De Nascimento</label><br>
+                <input type="date" name="txtDataNascimento" id="txtDataNascimento" min="1995-01-01"
+                    max="2025-10-01"><br>
+            </div>
+            <br>
+            <div>
+                <label for="">Sexo</label><br>
+                <input type="radio" name="txtSexo" id="txtSexo" value="1"> Feminino
+                <input type="radio" name="txtSexo" id="txtSexo" value="2"> Masculino
+            </div>
+            <br>
+            <div>
+                <label for="">Estado Civil</label>
+                <select name="cboEstadoCivil" id="cboEstadoCivil">
+                    <option value="1">Casado</option>
+                    <option value="2">Solteiro</option>
+                    <option value="3">Viuvo</option>
+                    <option value="4">Divorciado</option>
+                    <option value="5">Tico-tico no fubá</option>
+                    <option value="6">Outros</option>
+                </select>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Preferências De Local</legend>
+            <div>
+                <label for="">Informe um ou mais locais favoritos</label>
+                <input type="checkbox" name="cbLocal" id="cbLocal" value="1"> Cachoeira
+                <input type="checkbox" name="cbLocal" id="cbLocal" value="2"> Praia
+                <input type="checkbox" name="cbLocal" id="cbLocal" value="3"> Parque
+                <input type="checkbox" name="cbLocal" id="cbLocal" value="4"> Trilha
+                <input type="checkbox" name="cbLocal" id="cbLocal" value="5"> Fazenda
+            </div>
+            <br>
+            <div>
+                <label for="">Informe uma cor favorita</label><br>
+                <input type="color" name="txtCor" id="txtCor"><br>
+            </div>
+            <br>
+            <div>
+                <label for="">E-mail</label><br>
+                <input type="email" name="txtEmail" id="txtEmail" required><br>
+            </div>
+            <br>
+            <div>
+                <label for="">Informe sua Idade</label><br>
+                <input type="number" name="txtIdade" id="txtIdade" min="0" max="150" step="1"><br>
+            </div>
+            <div>
+                <label for="">Digite um texto de até 300 caracteres e conte sua história</label><br>
+                <textarea name="txtHistoria" id="txtHistoria" cols="30" rows="10" maxlength="300">
+                </textarea>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Dados Cadastrados</legend>
+            <table border="1" widht="80">
+                <tr>
+                    <th>CPF</th>
+                    <th>Nome</th>
+                    <th>Data De Nascimento</th>
+                    <th>E-mail</th>
+                </tr>
+                <tr> 
+                    <td>666.666.666-66</td>
+                    <td>Nelson Ribeiro</td>
+                    <td>04/11/1995</td>
+                    <td>nelson@gmail.com</td>
+                </tr>
+                <tr> 
+                    <td>666.666.666-66</td>
+                    <td>Nelson Ribeiro</td>
+                    <td>04/11/1995</td>
+                    <td>nelson@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>666.666.666-66</td>
+                    <td>Nelson Ribeiro</td>
+                    <td>04/11/1995</td>
+                    <td>nelson@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>666.666.666-66</td>
+                    <td>Nelson Ribeiro</td>
+                    <td>04/11/1995</td>
+                    <td>nelson@gmail.com</td>
+                </tr>
+                </table>
+        </fieldset>
+        <br>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
