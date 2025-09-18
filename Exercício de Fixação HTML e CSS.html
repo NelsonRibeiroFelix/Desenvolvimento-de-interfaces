@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Fixação HTML e CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h2 {
+            color: blue;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        ul, ol {
+            margin-bottom: 1em;
+            padding-left: 20px;
+        }
+        strong {
+            font-weight: bold;
+        }
+        code {
+            font-family: "Courier New", monospace;
+            background-color: #f0f0f0;
+            padding: 2px 4px;
+        }
+        footer {
+            margin-top: 2em;
+            text-align: center;
+        }
+        .references {
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Questionário de Desenvolvimento Web</h1>
+
+    <h2>1. Explique a diferença entre Internet e Web e como elas se relacionam.</h2>
+    <p>A <strong>Internet</strong> é a infraestrutura física de rede, a “espinha dorsal” que conecta computadores no mundo todo. Pense nas ruas e rodovias. Já a <strong>Web</strong> (ou World Wide Web) é um dos serviços que roda sobre essa infraestrutura, sendo um sistema de documentos interconectados por hiperlinks. É como o tráfego de carros que se move pelas ruas.</p>
+
+    <h2>2. O que é um website e como ele difere de uma aplicação web?</h2>
+    <p>Um <strong>website</strong> é basicamente um conjunto de páginas com conteúdo estático ou pouco dinâmico. Um site institucional ou um blog são bons exemplos. Uma <strong>aplicação web</strong>, por outro lado, é um software que roda no navegador e permite interações complexas com o usuário, como cadastros, processamento de dados e funcionalidades em tempo real. Pense no Google Docs ou no Gmail.</p>
+
+    <h2>3. Quais são as principais tecnologias client-side e qual a função de cada uma?</h2>
+    <p>No front-end, as principais tecnologias que rodam no navegador do cliente são:</p>
+    <ul>
+        <li><strong>HTML:</strong> A base de tudo. É a linguagem de **marcação** que define a estrutura do conteúdo da página.</li>
+        <li><strong>CSS:</strong> Cuida da parte visual. Ele **estiliza** o HTML, definindo cores, layout, fontes, etc.</li>
+        <li><strong>JavaScript:</strong> Dá vida à página. Adiciona **interatividade**, como animações, validação de formulários e manipulação de elementos.</li>
+    </ul>
+
+    <h2>4. Por que o HTML é chamado de linguagem de marcação e não de programação?</h2>
+    <p>O HTML é uma linguagem de **marcação**, pois usa "tags" para descrever e estruturar o conteúdo. Ele não tem lógica de programação, como variáveis ou funções. O papel dele é apenas dizer o que é o que na página (um título, um parágrafo, uma lista, etc.).</p>
+
+    <h2>5. Descreva a estrutura básica de um documento HTML5 e a função de cada parte.</h2>
+    <p>A estrutura de um documento HTML5 é bem simples:</p>
+    <ul>
+        <li><code>&lt;!DOCTYPE html&gt;</code>: A primeira linha, avisa ao navegador que é um HTML5.</li>
+        <li><code>&lt;html&gt;</code>: O elemento raiz que engloba tudo.</li>
+        <li><code>&lt;head&gt;</code>: Aqui ficam os metadados da página, como o título e a ligação com arquivos CSS.</li>
+        <li><code>&lt;body&gt;</code>: Todo o conteúdo visível para o usuário fica aqui.</li>
+    </ul>
+
+    <h2>6. Qual a função da instrução &lt;!DOCTYPE html&gt; em um documento HTML?</h2>
+    <p>O <code>&lt;!DOCTYPE html&gt;</code> é uma declaração que instrui o navegador a renderizar a página seguindo o padrão HTML5. Sem ela, o navegador poderia entrar no "modo de compatibilidade" e apresentar a página de forma inesperada.</p>
+
+    <h2>7. Diferencie as funções das tags &lt;head&gt; e &lt;body&gt; em um documento HTML.</h2>
+    <p>O <code>&lt;head&gt;</code> é para informações "invisíveis" ao usuário, como o título da página (<code>&lt;title&gt;</code>), links para folhas de estilo e scripts. Já o <code>&lt;body&gt;</code> contém tudo o que é visível: textos, imagens, botões, etc.</p>
+
+    <h2>8. Explique a importância do charset UTF-8 na criação de páginas web.</h2>
+    <p>O <strong>charset UTF-8</strong> é um padrão de codificação de caracteres universal. Ao usá-lo, garantimos que acentos, cedilhas e caracteres especiais de diferentes idiomas sejam exibidos corretamente no navegador, evitando aqueles símbolos estranhos no lugar do texto.</p>
+
+    <h2>9. O que são tags HTML e quais os componentes básicos de um elemento HTML?</h2>
+    <p><strong>Tags</strong> são os marcadores usados para criar elementos (<code>&lt;p&gt;</code>, <code>&lt;a&gt;</code>). Um <strong>elemento</strong> é formado pela tag de abertura, a tag de fechamento e o conteúdo. Exemplo: no elemento <code>&lt;p&gt;Olá, mundo!&lt;/p&gt;</code>, a tag de abertura é <code>&lt;p&gt;</code> e a de fechamento é <code>&lt;/p&gt;</code>.</p>
+
+    <h2>10. Quais as diferenças entre as tags de cabeçalho (h1 até h6) e qual sua importância para mecanismos de busca?</h2>
+    <p>As tags de cabeçalho <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> definem a hierarquia e a importância do conteúdo. O <code>&lt;h1&gt;</code> é o mais importante e deve ser usado para o título principal da página. Essa hierarquia é crucial para os **mecanismos de busca**, que a usam para entender a estrutura e a relevância do conteúdo.</p>
+
+    <h2>11. Descreva os principais usos da tag &lt;p&gt; e a diferença entre &lt;p&gt; e &lt;br&gt;.</h2>
+    <p>A tag <code>&lt;p&gt;</code> cria um **parágrafo**, agrupando um bloco de texto. Ela adiciona um espaçamento natural antes e depois. A tag <code>&lt;br&gt;</code>, por outro lado, é apenas uma **quebra de linha** simples, usada para forçar o texto a ir para a próxima linha sem iniciar um novo parágrafo.</p>
+
+    <h2>12. Explique a diferença entre uma lista ordenada (&lt;ol&gt;) e uma lista não ordenada (&lt;ul&gt;).</h2>
+    <p>Uma <strong>lista ordenada</strong> (<code>&lt;ol&gt;</code>) é usada quando a ordem dos itens importa, como um passo a passo. Ela exibe os itens com números. Uma <strong>lista não ordenada</strong> (<code>&lt;ul&gt;</code>) é usada para itens sem uma sequência específica, como uma lista de compras, e exibe os itens com marcadores.</p>
+
+    <h2>13. O que é o atributo alt da tag &lt;img&gt; e qual sua importância?</h2>
+    <p>O atributo <code>alt</code> fornece um texto alternativo para a imagem. Ele é fundamental para a **acessibilidade**, pois leitores de tela o usam para descrever a imagem para pessoas com deficiência visual. Além disso, o texto é exibido se a imagem não carregar.</p>
+
+    <h2>14. Qual a função da tag &lt;a&gt; e quais os atributos mais usados nela?</h2>
+    <p>A tag <code>&lt;a&gt;</code> cria hiperlinks. Seu atributo mais importante é o <code>href</code>, que aponta para o destino do link. O atributo <code>target="_blank"</code> é muito usado para abrir o link em uma nova aba.</p>
+
+    <h2>15. O que é semântica no HTML5 e cite três elementos semânticos introduzidos nesta versão.</h2>
+    <p>A **semântica no HTML5** é o uso de tags que dão significado ao conteúdo. Ao invés de usar apenas <code>&lt;div&gt;</code>, usamos tags como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code> e <code>&lt;footer&gt;</code> para descrever a função de cada seção da página. Isso melhora a acessibilidade e o SEO.</p>
+
+    <h2>16. Explique a diferença entre &lt;section&gt;, &lt;article&gt; e &lt;aside&gt;.</h2>
+    <p><code>&lt;section&gt;</code> é um agrupador temático, como um capítulo em um livro. <code>&lt;article&gt;</code> é um conteúdo independente e completo, como uma postagem de blog. <code>&lt;aside&gt;</code> é um conteúdo relacionado, mas secundário, como uma barra lateral de links.</p>
+
+    <h2>17. Qual a função da tag &lt;form&gt; no HTML e como ela se relaciona com aplicações web?</h2>
+    <p>A tag <code>&lt;form&gt;</code> cria um formulário para coletar dados do usuário. Ela é o ponto de partida para enviar informações ao servidor, que as processará e gerará uma resposta. É a base da interação entre o usuário e a aplicação web.</p>
+
+    <h2>18. Compare os métodos GET e POST em formulários HTML.</h2>
+    <p>O método <strong>GET</strong> envia os dados pela URL, sendo rápido, mas inseguro para dados sensíveis. Já o método <strong>POST</strong> envia os dados no corpo da requisição, tornando-o mais seguro e sem limites de tamanho, ideal para senhas e uploads de arquivos.</p>
+
+    <h2>19. O que é o CSS e quais problemas ele resolve em relação ao uso apenas do HTML?</h2>
+    <p>O <strong>CSS</strong> é uma linguagem de estilo que define a aparência do HTML. Ele resolve o problema de ter que estilizar cada elemento individualmente com atributos. Com CSS, podemos separar a estrutura do conteúdo da sua apresentação visual, facilitando a manutenção e a consistência do design.</p>
+
+    <h2>20. Quais são os três tipos básicos de seletores CSS e como eles funcionam?</h2>
+    <p>Os três tipos de seletores mais usados são:</p>
+    <ul>
+        <li><strong>Seletor de Tipo:</strong> Aplica o estilo a todos os elementos de um tipo (ex: <code>p { ... }</code>).</li>
+        <li><strong>Seletor de Classe:</strong> Seleciona elementos com um atributo <code>class</code> específico (ex: <code>.card { ... }</code>).</li>
+        <li><strong>Seletor de ID:</strong> Seleciona um único elemento com um <code>id</code> exclusivo (ex: <code>#logo { ... }</code>).</li>
+    </ul>
+
+    <footer>
+        <p>Criado por: <strong>Nelson Ribeiro Felix</strong></p>
+        <p>Data de Criação: 12/09/2025</p>
+        <div class="references">
+            <p><strong>Referências para pesquisa:</strong></p>
+            <p><a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN Web Docs</a></p>
+            <p><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></p>
+            <p><a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a></p>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>
