@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 33 - FlexBox</title>
+    <style>
+        .page{
+            display: grid;
+            padding: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            grid-gap: 10px;
+            grid-template-areas: 
+            "header header header header header header"
+            "menu main main main right right"
+            "menu footer footer footer footer footer"
+            ;
+            background-color: lightcyan;
+            grid-template-rows: 10vh 75vh 5vh;
+        }
+        .item{
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header{
+            grid-area: header;
+            background-color: lightskyblue;
+        }
+        .menu{
+            grid-area: menu;
+            background-color: lightpink;            
+        }
+        .main{
+            grid-area: main;
+            background-color: darkorange;
+        }
+        .right{
+            grid-area: right;
+            background-color: lightseagreen;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: deeppink;
+            grid-template-rows: minmax(100px, 200px);
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="item header">Header</div>
+        <div class="item menu">Menu</div>
+        <div class="item main">Main</div>
+        <div class="item right">Right</div>
+        <div class="item footer">Footer</div>
+    </div>
+
+</body>
+</html>
